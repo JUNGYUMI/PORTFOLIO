@@ -140,7 +140,7 @@
 	.logo > span{ 
 	    color: rgb(175, 175, 175); 
 	    font-size: 33px; 
-	    font-weight: 1000px; 
+	    font-weight: 900px; 
 	    font-family:Arial, Helvetica, sans-serif;
 	    cursor: default; 
 	} 
@@ -167,7 +167,7 @@
 	    width: calc(100% - 35px); 
 	} 
 	.btn-submit{ 
-	    width: 100%;
+	    width: 500px;
 	    background-color: rgb(175, 175, 175); 
 	    color: white; 
 	    height: 65px; 
@@ -286,7 +286,8 @@
 	.box-email>input, 
 	.box-country>select, 
 	.box-certification>input, 
-	.box-number-in>input{ 
+	.box-number-in>input,
+	.box-country>input{ 
 		width: 100%; 
 		height: 28px; 
 		border: none; 
@@ -432,6 +433,10 @@
            border-radius: 30px;
            font-size: 18px;
        }
+/* 주문확인 리스트 */
+	.h5-list{
+		font-weight: bold;
+	}
 /* 공지사항,문의 */
        .justify-content-center{
             justify-content: center;
@@ -454,8 +459,8 @@
        	}
        	.fas{
        		line-height: 1.5px;
-   		}
-/* 가맹문의 */
+   		} 
+/* 가맹문의  */
 		.container-membership-body{
 		            margin: 0 auto;
 		            width: 1000px;

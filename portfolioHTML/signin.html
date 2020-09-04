@@ -1,0 +1,115 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="<%=request.getContextPath()%>/resources/css/global.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<script src="https://kit.fontawesome.com/20695271aa.js" crossorigin="anonymous"></script> 
+    <title>로그인 화면</title> 
+    <style> 
+        *{ 
+            margin: 0; 
+            padding: 0; 
+        } 
+        .nav-login{ 
+            height: 100%; 
+            margin-left: 30%; 
+            margin-right: 30%; 
+             
+        }
+         
+        .box-container-login{ 
+            margin: 0 auto; 
+            height: 40px;    
+        } 
+        a{ 
+            text-decoration: none; 
+            color: black; 
+        } 
+        .logo{ 
+            text-align: left; 
+            margin-top: 100px; 
+             
+        } 
+        .logo > a{ 
+            color: rgb(175, 175, 175); 
+            font-size: 33px; 
+            font-weight: 1000px; 
+            font-family:Arial, Helvetica, sans-serif; 
+        } 
+ 
+        .text-bold{ 
+            font-weight: bold; 
+        } 
+        .box-id, 
+        .box-password{ 
+            height: 50px; 
+            border: 1px solid rgb(218, 218, 218); 
+            background-color: #ffff; 
+            margin-top: 15px; 
+            padding: 10px; 
+            box-sizing: border-box; 
+        } 
+         
+        .box-id>input, 
+        .box-password>input{ 
+            height: 30px; 
+            width: calc(100% - 95px); 
+            border :none; 
+        } 
+        .box-password>input{ 
+            height: 28px; 
+            width: calc(100% - 35px); 
+        } 
+        .btn-submit{ 
+            width: 100%;
+            background-color: rgb(175, 175, 175); 
+            color: white; 
+            height: 65px; 
+            margin-top: 25px; 
+            line-height: 50px; 
+            font-size: 24px; 
+            border: none;
+        }
+        .container-search{
+            margin-top: 5px;
+        }
+        .link-search{
+            color: rgb(126, 124, 124);
+            margin: 0 auto;
+        }
+    </style> 
+</head> 
+<body>  
+    <div class="nav-login">
+        <div class="box-container-login"> 
+            <div class="logo"><a href="#">로그인 Login</a></div> 
+            <div class="container-id"></div> 
+            <div class="box-container-id"></div> 
+        </div>
+ 
+        <div class="container-login"> 
+            <div class="text-bold"></div> 
+
+            <div class="box-id"> 
+                <input type="text" name="id" id="id" placeholder="아이디"> 
+            </div>
+
+            <div class="box-password"> 
+                <input type="password" name="pwd" id="pwd" placeholder="비밀번호">
+            </div>
+            <button class="btn-submit">로그인</button>  
+        </div>      
+        <!--비번찾기, 회원가입-->
+        <div class="container-search">
+            <a href="#" class="link-search">비밀번호 찾기</a>
+            <span>│</span>
+            <a href="#" class="link-search">회원가입</a>
+        </div>
+    </div>
+</body> 
+</html>

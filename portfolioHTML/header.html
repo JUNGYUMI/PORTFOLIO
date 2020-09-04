@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="<%=request.getContextPath()%>/resources/css/global.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<script src="https://kit.fontawesome.com/20695271aa.js" crossorigin="anonymous"></script>
+    <title>header</title>
+    <style>
+        /*헤드 부분*/
+        .main-head{
+            width: 100%;
+            height: 75px;
+            background-color: rgb(243, 243, 243);
+            top: 0;
+            display: block;
+            position: relative;
+        }
+        .container-sign{
+            width: 100%;
+            height: 30px;
+            right: 0;
+            position: relative;
+            margin-top: 5px;
+        }
+        .box-sign{
+            height: 30px;
+            width: 120px;
+            float: right;
+        }
+        .box-signin, .box-sign-up{
+            width: 60px;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            font-weight: 500;
+            float: left;
+        }
+        
+        .link-signin, .link-signup{
+            text-decoration: none;
+            color: black;
+        }
+        .link-signin:hover, .link-signup:hover{
+            text-decoration: underline;
+            color: black;
+        }
+        /*메뉴 부분*/
+        .container-list{
+            height: 30px;
+        }
+        .nav-list{
+            position: absolute;
+            list-style: none;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 30px;
+            height: 30px;
+            letter-spacing: -1px;
+            font-family: "Inconsolata", sans-serif;  
+            margin: 0 auto;
+        }
+        .eudia-list{
+            float: left;
+            vertical-align: middle;
+        }
+        .eudia-list:first-of-type{
+            margin-left: 300px;
+        }
+        .nav-list .eudia-list+.eudia-list{
+            margin-left: 70px;
+        }
+        .link-list{
+            text-decoration: none;
+            color: black;
+        }
+        #demo, #demo2, #demo3, #demo4{
+            cursor: pointer;
+        }
+        #demo:hover, #demo2:hover, #demo3:hover, #demo4:hover{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-head">
+        <div class="container-sign">
+            <div class="box-sign">
+                <div class="box-signin"><a href="#" class="link-signin">로그인</a></div>
+                <div class="box-sign-up"><a href="#" class="link-signup">회원가입</a></div>
+            </div>
+        </div>
+        <div class="container-list">
+            <ul class="nav-list">
+                <li class="eudia-list">
+                    <a href="#demo" class="link-list" data-toggle="collapse">EUDIA STORY</a>
+                    <div id="demo" class="collapse">
+                        <a href="cafe_introduce.html">카페소개</a><br>
+                        <a href="cafe_location.html">찾아오시는 길</a> 
+                      </div>
+                </li>
+                <li class="eudia-list">
+                    <a href="#demo2" class="link-list" data-toggle="collapse">EUDIA MENU</a>
+                    <div id="demo2" class="collapse">
+                        <a href="drink_menu.html">음료메뉴</a><br>
+                        <a href="dessert_menu.html">디저트 메뉴</a>
+                      </div>
+                </li>
+                <li class="eudia-list">
+                    <a href="#demo3" class="link-list" data-toggle="collapse">DRINK&DESSERT ORDER</a>
+                    <div id="demo3" class="collapse">
+                        <a href="online_order.html">온라인 주문</a><br>
+                        <a href="takeout_order.html">TAKE OUT</a>
+                      </div>
+                </li>
+                <li class="eudia-list">
+                    <a href="#demo4" class="link-list" data-toggle="collapse">COMMUNITY</a>
+                    <div id="demo4" class="collapse">
+                        <a href="notice_list.html">공지사항</a><br>
+                        <a href="customer_list.html">고객문의</a><br>
+                        <a href="membership.html">창업상담</a>
+                      </div>
+                </li>
+            </ul>
+        </div> 
+    </div>  
+</body>
+</html>

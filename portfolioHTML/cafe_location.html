@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="<%=request.getContextPath()%>/resources/css/global.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<script src="https://kit.fontawesome.com/20695271aa.js" crossorigin="anonymous"></script>
+    <title>찾아오시는 길</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box-location>h2{
+            text-align: center;
+        }
+        #daumRoughmapContainer1597040493060{
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+        .p-location{
+            text-align: center;
+            color: rgb(107, 106, 106);
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box-location">
+        <h2>찾아오시는 길</h2>
+    </div>
+    <!-- * 카카오맵 - 지도퍼가기 -->
+    <!-- 1. 지도 노드 -->
+    <div id="daumRoughmapContainer1597040493060" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+    <p class="p-location">충북 청주시 흥덕구 옥산면 청주역로 689 1층</p>
+    <!--
+        2. 설치 스크립트
+        * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+    -->
+    <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+    <!-- 3. 실행 스크립트 -->
+    <script charset="UTF-8">
+        new daum.roughmap.Lander({
+            "timestamp" : "1597040493060",
+            "key" : "2zm4b",
+            "mapWidth" : "700",
+            "mapHeight" : "300"
+        }).render();
+</script>
+</body>
+</html>
